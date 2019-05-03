@@ -477,7 +477,7 @@ print(
 print("You'll need to install a program called playerctl for this to work so run sudo pacman -S playerctl")
 newData += "# Media player controls\nbindsym XF86AudioPlay exec playerctl play\nbindsym F7 exec playerctl pause\n"
 newData += 'XF86AudioNext exec playerctl next\nbindsym XF86AudioPrev exec playerctl previous'
-f = open('/home/user/writeTest', 'w')
+f = open(filepath, 'w')
 f.write(newData)
 f.close()
 

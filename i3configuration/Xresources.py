@@ -45,6 +45,6 @@ else:
     color = int(ans)
     newData += 'URxvt.foreground:\t\t' + colors[color] + '\n'
     newData += data[data.find('URxvt*saveLines:'):]
-f = open('/home/user/writetest', 'w')
+f = open(filepath, 'w')
 f.write(newData)
 f.close()
