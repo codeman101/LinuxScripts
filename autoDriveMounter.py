@@ -1,3 +1,6 @@
+# About: This script simplifies the process of adding a drive to the fstab file so it can be automatically mounted every time the computer
+# Note for use: Due to the nature of the directory it accesses it needs to be ran as root
+
 import subprocess as p
 import string as s
 fstype = ''
@@ -12,7 +15,6 @@ mountPoints = []
 cmd = ['lsblk', '-f'] #using sudo on the file gives root power
 output = p.Popen( cmd, stdout= p.PIPE).communicate()[0]
 data = str(output)
-#print(data)
 
 ptr=0
 i=0
