@@ -481,3 +481,12 @@ f = open(filepath, 'w')
 f.write(newData)
 f.close()
 
+print('you can also go further in customizing the look by typing lxappearance')
+print(' into the terminal and pick with theme you want to use\n')
+print('you can also bind keyboard commands to launching apps. Go to the .i3/config file in your home directory')
+print(' and go the buttom of the section where it says ' + "'" + 'Start Applications' + "'" + ' and add a command ')
+print('with the name of the app that you got from xprop For example I added bindsym+$mod+Shift+f exec firefox for firefox.\n')
+print('After you have added your keybind and saved the file restart i3 to trigger the change by pressing $mod+Shift+r\n')
+print('I did not do this as part of the auto-setup because if you pick a keybind that already exists you will get an error message\n')
+
+
